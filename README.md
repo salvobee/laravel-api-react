@@ -1,4 +1,4 @@
-# @salvobee/react-api-resource
+# Larevel API React
 
 A tiny React hook that wraps `@salvobee/api-resource-core` and provides a ready-to-use CRUD client for resource-based APIs.  
 If no `routeFn` is passed, it uses a Laravel-style resolver by default (via the core).
@@ -6,13 +6,13 @@ If no `routeFn` is passed, it uses a Laravel-style resolver by default (via the 
 ## Install
 
 ```bash
-npm i @salvobee/react-api-resource @salvobee/api-resource-core @salvobee/laravel-resource-route axios react
+npm i @salvobee/laravel-api-react
 ```
 
 ## Usage (TypeScript / React)
 ```typescript jsx
 import axios from "axios";
-import { useApiResource } from "@salvobee/react-api-resource";
+import { useApiResource } from "@salvobee/laravel-api-react";
 
 type Post = { id: number; title: string };
 type PostList = { data: Post[]; meta: any };
