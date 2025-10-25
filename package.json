@@ -1,0 +1,40 @@
+{
+  "name": "@salvobee/laravel-api-react",
+  "version": "0.1.0",
+  "description": "React hook wrapper for @salvobee/laravel-api-client.",
+  "keywords": ["react", "crud", "resource", "laravel", "ziggy", "axios", "typescript"],
+  "license": "MIT",
+  "author": "Salvo Bee",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --sourcemap --clean",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "axios": "^1.6.0",
+    "@salvobee/laravel-api-client": "^0.1.0",
+    "@salvobee/laravel-resource-route": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.6.3",
+    "rimraf": "^6.0.1",
+    "@types/react": "^18.3.11",
+    "@types/node": "^22.7.5"
+  }
+}
