@@ -1,6 +1,6 @@
-# Larevel API React
+# Laravel API React
 
-A tiny React hook that wraps `@salvobee/api-resource-core` and provides a ready-to-use CRUD client for resource-based APIs.  
+A tiny React hook that wraps `@salvobee/laravel-api-react` and provides a ready-to-use CRUD client for resource-based APIs.  
 If no `routeFn` is passed, it uses a Laravel-style resolver by default (via the core).
 
 ## Install
